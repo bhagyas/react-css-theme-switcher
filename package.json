@@ -1,5 +1,5 @@
 {
-  "name": "react-css-theme-switcher",
+  "name": "@bhagyas/react-css-theme-switcher",
   "description": "Switch between CSS themes using React",
   "version": "0.2.2",
   "license": "MIT",

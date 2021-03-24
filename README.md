@@ -226,3 +226,7 @@ Contributions of any kind are welcome!
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+
+
+This repository is fixing some issues with the original react-css-theme-switcher. 
