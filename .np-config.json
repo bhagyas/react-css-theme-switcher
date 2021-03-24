@@ -1,5 +1,5 @@
 {
 	"yarn": true,
 	"contents": "dist",
-	"test": false
+	"tests": false
 }
