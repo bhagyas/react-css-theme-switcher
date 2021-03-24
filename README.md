@@ -2,21 +2,9 @@
   <h1>React CSS Theme Switcher</h1>
 </div>
 <p>
-  <a href="https://www.npmjs.com/package/react-css-theme-switcher" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/react-css-theme-switcher.svg">
-  </a>
-  <img src="https://img.shields.io/badge/node-%3E%3D10-blue.svg" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://codecov.io/gh/JoseRFelix/react-css-theme-switcher" target="_blank">
-    <img alt="codecov" src="https://codecov.io/gh/JoseRFelix/react-css-theme-switcher/branch/master/graph/badge.svg" />
-  </a>
-  <a href="http://makeapullrequest.com" target="_blank">
-    <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
-  </a>
-  <img alt="Bundle size" src="https://badgen.net/bundlephobia/minzip/react-css-theme-switcher" />
- 
 </p>
 
 > 💫 Switch between CSS themes using React
@@ -28,13 +16,13 @@
 ## Installation
 
 ```shell
-npm i react-css-theme-switcher
+npm i @bhagyas/react-css-theme-switcher
 ```
 
 or with Yarn:
 
 ```shell
-yarn add react-css-theme-switcher
+yarn add @bhagyas/react-css-theme-switcher
 ```
 
 ## Usage
@@ -45,7 +33,7 @@ Import ThemeSwitcherProvider and pass a theme object with the names of the theme
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
+import { ThemeSwitcherProvider } from '@bhagyas/react-css-theme-switcher';
 
 const themes = {
   light: 'public/light.css',
@@ -64,7 +52,7 @@ const App = () => {
 Use `useThemeSwitcher` Hook:
 
 ```jsx
-import { useThemeSwitcher } from 'react-css-theme-switcher';
+import { useThemeSwitcher } from '@bhagyas/react-css-theme-switcher';
 
 const Component = () => {
   const { switcher, themes, currentTheme, status } = useThemeSwitcher();
@@ -92,7 +80,7 @@ const Component = () => {
 
 ### CSS Injection Order
 
-react-css-theme-switcher provides a way to avoid collision with other stylesheets or appended styles by providing where to inject the styles. To achieve this, add an HTML comment like `<!--inject-styles-here-->` somewhere on the head and then provide `'inject-styles-here'` or your custom name in the insertionPoint prop in `ThemeSwitcherProvider`.
+@bhagyas/react-css-theme-switcher provides a way to avoid collision with other stylesheets or appended styles by providing where to inject the styles. To achieve this, add an HTML comment like `<!--inject-styles-here-->` somewhere on the head and then provide `'inject-styles-here'` or your custom name in the insertionPoint prop in `ThemeSwitcherProvider`.
 
 ```html
 <!DOCTYPE html>
