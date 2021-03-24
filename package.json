@@ -40,16 +40,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "author": "Jose R. Felix (https://jfelix.info)",
+  "author": "Bhagya Silva, originally written by Jose R. Felix (https://jfelix.info)",
   "module": "dist/react-css-theme-switcher.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JoseRFelix/react-css-theme-switcher"
+    "url": "https://github.com/bhagyas/react-css-theme-switcher"
   },
   "bugs": {
-    "url": "https://github.com/JoseRFelix/react-css-theme-switcher/issues"
+    "url": "https://github.com/bhagyas/react-css-theme-switcher/issues"
   },
-  "homepage": "https://github.com/JoseRFelix/react-css-theme-switcher#readme",
+  "homepage": "https://github.com/bhagyas/react-css-theme-switcher#readme",
   "peerDependencies": {
     "react": ">=16"
   },
