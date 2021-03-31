@@ -77,7 +77,8 @@ export function ThemeSwitcherProvider({
 
       const previousStyle = document.getElementById(id);
       if (previousStyle) {
-        previousStyle.remove();
+        //change the element Id to be different.
+        previousStyle.id = previousStyle.id + '-gc';
       }
 
       if (themeMap[theme]) {
@@ -90,6 +91,12 @@ export function ThemeSwitcherProvider({
           href: themeMap[theme],
           onload: () => {
             setStatus(Status.loaded);
+            //clean up the previous element
+            const previousId = id + '-gc';
+            if (previousId) {
+              const prevElem = document.getElementById(previousId);
+              if (prevElem) prevElem.remove();
+            }
           },
         });
 
